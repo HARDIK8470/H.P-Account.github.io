@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style
+.css">
+  <title>H.PATEL Accounting</title>
+  <script>
+    $(function() {
+      $('#nav a').on('click', function(e) {
+        e.preventDefault();
+        var page = $(this).attr('href');
+        $('#content').load(page);
+      });
+    });
+    $(document).bind("contextmenu", function(e) {
+      return false;
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <a href="/"><img src="logo.png" alt="Logo"></a>
+  </header>
+  <noscript>
+    <div class="padding-left-16">
+      <p>JavaScript is disabled! Why you want to do so?
+        Please enable JavaScript in your web browser!</p>
+    </div>
+    <style type="text/css">
+      #no-js {
+        display: none;
+      }
+    </style>
+  </noscript>
+  <div id="no-js">
+    <div id="nav" class="scrollmenu">
+      <a href="javascript:void(0)" class="active">Home</a>
+      <a href="notice.html">Service</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div id="content">
+      <!-- Center Content Starts -->
+      <div class="center-content">
+        <img src="images/college.jpg" class="img-css" alt="">
+        <br>
+        <center><a class="paybtn" href="javascript:void(0)">Book Appointment</a></center>
+
+        <!-- Gallery Starts -->
+        <h2>Gallery</h2>
+        <div class="Gallery">
+
+          <div class="GalleryImg">
+            <img src="images/img1.jpg" alt="photo" />
+          </div>
+
+          <div class="GalleryImg">
+            <img src="images/img2.jpg" alt="photo" />
+          </div>
+
+          <div class="GalleryImg">
+            <img src="images/img3.jpg" alt="photo" />
+          </div>
+
+          <div class="GalleryImg">
+            <img src="images/img4.jpg" alt="photo" />
+          </div>
+
+        </div>
+        <p class="right-side-link"><a href="javascript:void(0)">More</a></p>
+        <!-- Gallery Ends-->
+        <br>
+
+        <!-- Center Content Ends -->
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2021 H.patel Accounting<br>All rights reserved</p>
+      <a style="color:white;" href="/home2.html">[Change to Version 2.0]</a>
+    </footer>
+  </div>
+</body>
+
+</html>
