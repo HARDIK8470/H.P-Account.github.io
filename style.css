@@ -170,3 +170,10 @@ td {
   background-color: #e1f8dc;
   padding: 3px;
 }
+.custom-iframe {
+      width: 800px;
+      height: 600px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
