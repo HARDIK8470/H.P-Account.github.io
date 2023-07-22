@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dashboard</title>
+  <style>
+    /* CSS styling untuk layout */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Welcome to the Dashboard!</h2>
+    <p>Logged in as: <span id="username"></span></p>
+  </div>
+
+  <script>
+    // Dapatkan username dari penyimpanan lokal
+    const username = localStorage.getItem('loggedInUsername');
+
+    // Periksa apakah pengguna telah login
+    if (username) {
+      const usernameElement = document.getElementById('username');
+      usernameElement.textContent = username;
+    }
+  </script>
+</body>
+
+</html>
